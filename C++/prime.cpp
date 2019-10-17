@@ -11,7 +11,7 @@ class prime {
     prime(int x) {
       a = x;
     }
-  void calculate() {
+  void cal() {
     k = 1;
     for (i = 2; i <= a / 2; i++) {
       if (a % i == 0) {
@@ -22,7 +22,7 @@ class prime {
       }
     }
   }
-  void show() {
+  void display() {
     if (k == 1) {
       cout << "It is a Prime Number" << endl;
     } else {
@@ -36,7 +36,7 @@ void main() {
   cout << "Enter the Number: \n";
   cin >> a;
   prime obj(a);
-  obj.calculate();
-  obj.show();
+  obj.cal();
+  obj.display();
   getch();
 }
